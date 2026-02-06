@@ -54,13 +54,16 @@
 
   /* Bullet point styling */
   ul {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    text-align: left;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    padding-left: 20px;
-  }
+  max-width: 700px;
+  margin: 0 auto 30px;
+
+  margin-left: 80px;    /* TAB-like indent */
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  padding-left: 20px;   /* keeps bullets readable */
+}
+
 
   li {
     margin-bottom: 15px; /* space between bullets */
@@ -79,6 +82,18 @@
     max-width: 90%;
     border-radius: 12px;
   }
+
+  figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
 </style>
 
 </head>
@@ -102,11 +117,24 @@ In the past few years AI has become available for the wide public through the us
       Within this are we have a network of people that work in the Arctic on many different topics that want to explore the use of AI. Some examples are:
         <ul>
   <li>Geolocation of black and white pictures of the Sámi archive in order to link them to events, people and journals of the Arctic region.  This could also help to identify changes in the landscape and climate over the years by collocating pictures of different years of the same place.</li>
-              <div class="images">
-      <img src="download.png" alt="Image 1">
-      <img src="image2.jpg" alt="Image 2">
-     </div>
-  <li>Creating micro climate models in remote regions based on sensor information and making this available for reindeer herders to support them in finding the best regions to move their herds to.</li>
+           <div class="images">
+
+  <figure>
+    <img src="image1.png" alt="Diltering reference images">
+    <figcaption>
+      Results of filtering reference images after calculating their visual and geographic similarity with the historical image.
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="image2.jpg" alt="Description of the second image">
+    <figcaption>
+      Caption of the second image.
+    </figcaption>
+  </figure>
+
+</div>
+  <li>Creating microclimate models in remote regions based on sensor information and making this available for reindeer herders to support them in finding the best regions to move their herds to.</li>
   <li>Performing NLP on small languages in the Arctic for which there is not enough data to use the standard LLMs.</li>
   <li>Preserving traditional knowledge in a format that does justice to that knowledge and makes it practically available for people from the Sámi communities. This can be used to assist in land use disputes, preserving culture, etc. </li>
 </ul>
